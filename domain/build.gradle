@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'net.ltgt.apt'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.google.dagger:dagger:2.5'
+    apt 'com.google.dagger:dagger-compiler:2.5'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
